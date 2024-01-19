@@ -4,8 +4,7 @@ import { useLocation } from "react-router-dom";
 
 const PageLayout = ({ children }) => {
   const { pathName } = useLocation();
-   console.log("hello")
-   console.log(pathName)
+
   return (
     <Flex>
       {/* Sidebar on the left */}

@@ -5,7 +5,7 @@ import { Outlet, useLocation } from "react-router-dom";
 const Root = () => {
   const location = useLocation();
   const pathName=location.pathname;
-   console.log(pathName)
+
   return (
     <Flex>
       {/* Sidebar on the left */}

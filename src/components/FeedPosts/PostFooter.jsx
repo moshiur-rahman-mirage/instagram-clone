@@ -2,10 +2,10 @@ import { Box, Button, Flex, Input, InputGroup, InputRightElement, Text } from "@
 import { useState } from "react";
 import { CommentLogo, NotificationsLogo, UnlikeLogo } from "../../assets/constents";
 
-const PostFooter = () => {
+const PostFooter = ({username}) => {
   const [liked, setLiked] = useState(false);
   const [likes, setLikes] = useState(100);
-  console.log(liked)
+
   const handleLike = () => {
    
     if (liked) {
@@ -32,7 +32,7 @@ const PostFooter = () => {
         {likes} likes
       </Text>
       <Text fontSize={"sm"} fontWeight={700}>
-        doe {" "}
+        {username} {" "}
         <Text as='span' fontWeight={400}>
             Feeling good
         </Text>

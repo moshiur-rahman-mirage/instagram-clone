@@ -83,7 +83,7 @@ const Sidebar = () => {
                             justifyContent={{base:"center",md:"flex-start"}}
                         >
                             {item.icon}
-                            {console.log(item.icon)}
+                            
                             <Box display={{base:"none",md:"block"}}>
                                 {item.text}
                             </Box>
